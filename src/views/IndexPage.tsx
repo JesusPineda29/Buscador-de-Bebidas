@@ -3,6 +3,8 @@
 
 export const IndexPage = () => {
   return (
-    <div>indexPage</div>
+    <>
+      <h1>Inicio</h1>
+    </>
   )
 }

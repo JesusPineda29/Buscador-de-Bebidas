@@ -2,7 +2,9 @@
 
 
 export const FavoritesPage = () => {
-  return (
-    <div>FavoritesPage</div>
-  )
+    return (
+        <>
+            <h1>Favoritos</h1>
+        </>
+    )
 }
