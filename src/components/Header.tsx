@@ -17,7 +17,7 @@ export const Header = () => {
   const fetchCategories = useAppStore((state) => state.fetchCategories)
   const categories = useAppStore((state) => state.categories)
   const searchRecipes = useAppStore((state) => state.searchRecipes)
-
+    const showNotification = useAppStore((state) => state.showNotification)
 
 
   useEffect(() => {
@@ -37,7 +37,10 @@ export const Header = () => {
 
     // validar
     if (Object.values(serchFilters).includes('')) {
-      console.log('Todos los campos son obloigatorios')
+      showNotification({
+        text: 'Todos los campos son obloigatorios',
+        error: true
+      })
       return
     }
 
