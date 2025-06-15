@@ -10,13 +10,18 @@ export const AppRouter = () => {
         <BrowserRouter>
             <Routes>
                 <Route element={<Layout />}>
-                    <Route path='/' element={<IndexPage />} />
-                    <Route
-                        path='/favoritos' element={
-                            <Suspense fallback='Cargando...'>
-                                <FavoritesPage />
-                            </Suspense>}
-                    />
+
+                    <Route path='/' element={
+                        <Suspense fallback='Cargando...'>
+                            <IndexPage />
+                        </Suspense>
+                    } index />
+
+                    <Route path='/favoritos' element={
+                        <Suspense fallback='Cargando...'>
+                            <FavoritesPage />
+                        </Suspense>
+                    } />
                 </Route>
             </Routes>
         </BrowserRouter>
