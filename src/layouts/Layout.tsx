@@ -1,9 +1,17 @@
-
+import { useEffect } from "react"
 import { Outlet } from "react-router-dom"
 import { Header } from "../components/Header"
 import MyModal from "../components/MyModal"
+import { useAppStore } from "../stores/useAppStore"
 
 export const Layout = () => {
+
+    const loadFromStorage = useAppStore((state) => state.loadFromStorage)
+
+    useEffect(() => {
+        loadFromStorage()
+    }, [])
+
     return (
 
         <>
