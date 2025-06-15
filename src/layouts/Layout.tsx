@@ -3,11 +3,11 @@ import { Outlet } from "react-router-dom"
 import { Header } from "../components/Header"
 import MyModal from "../components/MyModal"
 import { useAppStore } from "../stores/useAppStore"
+import Notification from "../components/Notification"
 
 export const Layout = () => {
 
     const loadFromStorage = useAppStore((state) => state.loadFromStorage)
-    const notification = useAppStore((state) => state.notification)
 
     useEffect(() => {
         loadFromStorage()
@@ -23,7 +23,7 @@ export const Layout = () => {
             </main>
 
             <MyModal />
-
+            <Notification />
         </>
 
     )
