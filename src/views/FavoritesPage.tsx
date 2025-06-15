@@ -4,7 +4,7 @@ import { useAppStore } from "../stores/useAppStore"
 
 
 
-export const FavoritesPage = () => {
+const FavoritesPage = () => {
 
     const favorites = useAppStore((state) => state.favorites)
 
@@ -34,3 +34,5 @@ export const FavoritesPage = () => {
         </>
     )
 }
+
+export default FavoritesPage
