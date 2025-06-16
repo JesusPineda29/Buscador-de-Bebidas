@@ -17,7 +17,7 @@ export const Header = () => {
   const fetchCategories = useAppStore((state) => state.fetchCategories)
   const categories = useAppStore((state) => state.categories)
   const searchRecipes = useAppStore((state) => state.searchRecipes)
-    const showNotification = useAppStore((state) => state.showNotification)
+  const showNotification = useAppStore((state) => state.showNotification)
 
 
   useEffect(() => {

@@ -7,7 +7,11 @@ export default {
 
         const result = streamText({
             model: openrouter('meta-llama/llama-3.2-1b-instruct:free'),
-            prompt
+            prompt,
+
+            // controlar el comportaminto de la ia
+            system: 'Eres un generador de recetas de bebidas. Responde solo con el nombre original de una bebida y su receta: ingredientes y pasos. Adáptate si el usuario menciona ingredientes, sabores o tipos de bebida. No expliques ni saludes. Solo da la receta, clara y directa.', // le da un contexto a la ia
+
         })
 
         return result.textStream

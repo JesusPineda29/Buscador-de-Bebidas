@@ -16,10 +16,10 @@ export const Layout = () => {
 
     return (
 
-        <>
+        <div className="min-h-screen flex flex-col">
             <Header />
 
-            <main className="container mx-auto py-16">
+            <main className="container mx-auto py-16 flex-1">
                 <Outlet />
             </main>
 
@@ -28,7 +28,7 @@ export const Layout = () => {
 
 
             <Footer />
-        </>
+        </div>
 
     )
 }
