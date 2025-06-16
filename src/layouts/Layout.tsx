@@ -4,6 +4,7 @@ import { Header } from "../components/Header"
 import MyModal from "../components/MyModal"
 import { useAppStore } from "../stores/useAppStore"
 import Notification from "../components/Notification"
+import { Footer } from "../components/Footer"
 
 export const Layout = () => {
 
@@ -24,6 +25,9 @@ export const Layout = () => {
 
             <MyModal />
             <Notification />
+
+
+            <Footer />
         </>
 
     )
