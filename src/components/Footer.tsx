@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm">
         
         <div className="text-center sm:text-left">
-          <p className="text-xl font-bold">Planificador de Gastos</p>
+          <p className="text-xl font-bold">Buscador y Generador de Bebidas </p>
           <p className="text-gray-300">Desarrollado por <strong>Jesús Pineda</strong></p>
         </div>
 
@@ -53,3 +53,4 @@ export const Footer = () => {
     </footer>
   );
 };
+
