@@ -4,8 +4,8 @@ Aplicación web que permite buscar recetas reales de bebidas, guardarlas en favo
 
 ## 🚀 Demo
 
-[Enlace a la demo](https://tudemo.com)  
-[Repositorio en GitHub](https://github.com/tuusuario/tu-repo)
+[Enlace a la demo](https://buscador-bebidas-react-typescript-ia.netlify.app)  
+[Repositorio en GitHub](https://github.com/JesusPineda29)
 
 ## 🛠️ Stack Tecnológico
 
@@ -29,7 +29,7 @@ Aplicación web que permite buscar recetas reales de bebidas, guardarlas en favo
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/tu-repo.git
+   git clone https://github.com/JesusPineda29/Buscador-de-Bebidas
    cd tu-repo
    ```
 
