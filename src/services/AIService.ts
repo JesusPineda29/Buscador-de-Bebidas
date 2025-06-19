@@ -6,7 +6,7 @@ export default {
     async generateRecipe(prompt: string) {
 
         const result = streamText({
-            model: openrouter('meta-llama/llama-3.2-1b-instruct:free'),
+            model: openrouter('deepseek/deepseek-r1-0528-qwen3-8b:free'),
             prompt,
 
             // controlar el comportaminto de la ia
